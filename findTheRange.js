@@ -5,16 +5,15 @@ let array = [28, 43, -12, 30, 4, 0, -36];
 
 let smallest = array[0];
 let largest = array[0];
-let range = largest - smallest;
 
 for (let i = 0; i < array.length; i++) {
   if (array[i] < smallest) {
     smallest = array[i];
-  }
-  if (array[i] > largest) {
+  } else if (array[i] > largest) {
     largest = array[i];
   }
-  console.log(largest);
-  console.log(smallest);
-  console.log(range);
 }
+console.log("The largest number is " + largest);
+console.log("The smalest number is " + smallest);
+let range = largest - smallest;
+console.log(`The range of this array is ${range}`);
